@@ -8,8 +8,8 @@ int main() {
   string word;
 
   cout << "Word: ";
-  // cin >> word;
-  word = "<test&test>";
+  cin >> word;
+  // word = "<test&test>";
 
   word = regex_replace(word, regex("&"), "&amp"); // replace 'def' -> 'klm'
   word = regex_replace(word, regex("<"), "&lt");
